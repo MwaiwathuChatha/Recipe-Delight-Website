@@ -20,7 +20,7 @@ Clone this repository to your local machine by opening your terminal in Linux or
 - `Open your browser and visit http://localhost:3000 to view Recipe Delight.`
 
 ## API Integration
-Recipe Delight integrates with TheMealDB API to fetch recipe data. The API provides endpoints for accessing recipes based on various criteria, including origin area and food category. You can explore the API documentation [here] (https://www.themealdb.com/api.php) to learn more about its capabilities.
+Recipe Delight integrates with TheMealDB API to fetch recipe data. The API provides endpoints for accessing recipes based on various criteria, including origin area and food category. You can explore the API documentation [here](https://www.themealdb.com/api.php) to learn more about its capabilities.
 
 ## Deployment
 Recipe Delight is hosted on Netlify and can be accessed online at [this link](https://recipe-delight.netlify.app/.)
