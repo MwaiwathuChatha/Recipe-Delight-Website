@@ -6,16 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const letterValue = urlParams.get("letter");
   const URL =
     "https://www.themealdb.com/api/json/v1/1/search.php?f=" + letterValue;
-  //the callback function calls fetch to retrieve the data we need. Fetch Returns a promise.
+  //The callback function calls fetch to retrieve the data we need. Fetch Returns a promise.
   fetch(URL)
     //Since all data returned from APIs is in JSON form, response.json() resolves it into a JavaScript Object in the form of another promise
     .then((response) => response.json())
     .then((data) => {
-      // //For loop that iterates through the data from API that is in the form of an Array called meals.
-      // //The API gives us the the Category ID, Category name, Category Description and Category Thumbnail.
 
-      //    //We assign variables to each of those values. We wont be using the API provide ID value.
+
+      //For loop that iterates through the data from API that is in the form of an Array called meals.
+      //The API gives us the the Category ID, Category name, Category Description and Category Thumbnail.
       for (let i = 0; i < data.meals.length; i++) {
+        
+        //We assign variables to each of the API provided values. We wont be using the API provided ID value.
         const mealText = data.meals[i].strMeal;
         const areaText = data.meals[i].strArea;
         const mealThumb = data.meals[i].strMealThumb;

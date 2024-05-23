@@ -1,8 +1,8 @@
 import "./style.css";
 
-//we add an event listener so that every time the page is loaded we fetch data from the API
+//We add an event listener so that every time the page is loaded we fetch data from the API
 document.addEventListener("DOMContentLoaded", () => {
-  //the callback function calls fetch to retrieve the data we need. Fetch Returns a promise.
+  //The callback function calls fetch to retrieve the data we need. Fetch Returns a promise.
   fetch("https://themealdb.com/api/json/v1/1/categories.php")
     //Since all data returned from APIs is in JSON form, response.json() resolves it into a JavaScript Object in the form of another promise
     .then((response) => response.json())
