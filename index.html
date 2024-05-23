@@ -4,64 +4,67 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/pot2.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email Broadcaster</title>
+    <title>Recipe Delight</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
     <div class="container">
       <div class="navbar">
         <img src="/3D-icon.png" alt="" />
-        <h1>Recipe Delight</h1>
+       <a href="/">Recipe Delight</a>
       </div>
-     <a href="#"> <div class="magnifying-icon-container">
-        <div class="magnifying-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#FFFFFF"
-          >
-            <path
-              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
-            />
-          </svg>
-        </div>
-      </div></a>
+      <div class="magnifying-icon-container">
+      <form action="/pages/search-meal-page/" id="search-form" >
+        <input type="text" id="search" class="form-control" required placeholder="Search...">
+        <button type="submit"><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#FFFFFF"
+        >
+          <path
+            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+          />
+        </svg></button>
+      </form>
+    
+      </div>
       <div class="wrapper">
         <h1>
           Search for any recipes and take your culinary skills to the next
           level!
         </h1>
-        <a href="#"><div class="button">Food Category List</div></a>
-        <a href="#"><div class="button">Get a Random Meal</div></a>
+        <a href="/pages/food-category-page/"><div class="button">Food Category List</div></a>
+        <a href="/pages/random-meal-page/"><div class="button">Get a Random Meal</div></a>
         <h3>Get a list of meals by selecting the first letter of the meal</h3>
         <div class="alphabet">
-          <a href="#"><div id="alphabet-letter">A</div></a>
-          <a href="#"><div id="alphabet-letter">B</div></a>
-          <a href="#"><div id="alphabet-letter">C</div></a>
-          <a href="#"><div id="alphabet-letter">D</div></a>
-          <a href="#"><div id="alphabet-letter">E</div></a>
-          <a href="#"><div id="alphabet-letter">F</div></a>
-          <a href="#"> <div id="alphabet-letter">G</div></a>
-          <a href="#"> <div id="alphabet-letter">H</div></a>
-          <a href="#"> <div id="alphabet-letter">I</div></a>
-          <a href="#"> <div id="alphabet-letter">J</div></a>
-          <a href="#"> <div id="alphabet-letter">K</div></a>
-          <a href="#"><div id="alphabet-letter">L</div></a>
-          <a href="#"><div id="alphabet-letter">M</div></a>
-          <a href="#"><div id="alphabet-letter">N</div></a>
-          <a href="#"><div id="alphabet-letter">O</div></a>
-          <a href="#"> <div id="alphabet-letter">P</div></a>
-          <a href="#"> <div id="alphabet-letter">Q</div></a>
-          <a href="#"> <div id="alphabet-letter">R</div></a>
-          <a href="#"> <div id="alphabet-letter">S</div></a>
-          <a href="#"> <div id="alphabet-letter">T</div></a>
-          <a href="#" id="letter"><div id="alphabet-letter">U</div></a>
-          <a href="#"> <div id="alphabet-letter">V</div></a>
-          <a href="#"> <div id="alphabet-letter">W</div></a>
-          <a href="#"> <div id="alphabet-letter">X</div></a>
-          <a href="#"> <div id="alphabet-letter">Y</div></a>
-          <a href="#"><div id="alphabet-letter">Z</div></a>
+          <a href="/pages/letter-search-page/?letter=a"><div id="alphabet-letter">A</div></a>
+          <a href="/pages/letter-search-page/?letter=b"><div id="alphabet-letter">B</div></a>
+          <a href="/pages/letter-search-page/?letter=c"><div id="alphabet-letter">C</div></a>
+          <a href="/pages/letter-search-page/?letter=d"><div id="alphabet-letter">D</div></a>
+          <a href="/pages/letter-search-page/?letter=e"><div id="alphabet-letter">E</div></a>
+          <a href="/pages/letter-search-page/?letter=f"><div id="alphabet-letter">F</div></a>
+          <a href="/pages/letter-search-page/?letter=g"> <div id="alphabet-letter">G</div></a>
+          <a href="/pages/letter-search-page/?letter=h"> <div id="alphabet-letter">H</div></a>
+          <a href="/pages/letter-search-page/?letter=i"> <div id="alphabet-letter">I</div></a>
+          <a href="/pages/letter-search-page/?letter=j"> <div id="alphabet-letter">J</div></a>
+          <a href="/pages/letter-search-page/?letter=k"> <div id="alphabet-letter">K</div></a>
+          <a href="/pages/letter-search-page/?letter=l"><div id="alphabet-letter">L</div></a>
+          <a href="/pages/letter-search-page/?letter=m"><div id="alphabet-letter">M</div></a>
+          <a href="/pages/letter-search-page/?letter=n"><div id="alphabet-letter">N</div></a>
+          <a href="/pages/letter-search-page/?letter=o"><div id="alphabet-letter">O</div></a>
+          <a href="/pages/letter-search-page/?letter=p"> <div id="alphabet-letter">P</div></a>
+          <a href="/pages/letter-search-page/?letter=q"> <div id="alphabet-letter">Q</div></a>
+          <a href="/pages/letter-search-page/?letter=r"> <div id="alphabet-letter">R</div></a>
+          <a href="/pages/letter-search-page/?letter=s"> <div id="alphabet-letter">S</div></a>
+          <a href="/pages/letter-search-page/?letter=t"> <div id="alphabet-letter">T</div></a>
+          <a href="/pages/letter-search-page/?letter=u" id="letter"><div id="alphabet-letter">U</div></a>
+          <a href="/pages/letter-search-page/?letter=v"> <div id="alphabet-letter">V</div></a>
+          <a href="/pages/letter-search-page/?letter=w"> <div id="alphabet-letter">W</div></a>
+          <a href="/pages/letter-search-page/?letter=x"> <div id="alphabet-letter">X</div></a>
+          <a href="/pages/letter-search-page/?letter=y"> <div id="alphabet-letter">Y</div></a>
+          <a href="/pages/letter-search-page/?letter=z"><div id="alphabet-letter">Z</div></a>
       </div>
     <div class="footer">
       <h3>© 2024 Recipe Delight</h3>

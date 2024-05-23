@@ -1,3 +1,4 @@
+/* For every CSS Stylesheet always start with this */
 *,
 *:before,
 *:after {
@@ -6,23 +7,36 @@
   padding: 0;
 }
 
+/* General HTML body styles */
 body {
   min-width: 320px;
   min-height: 100vh;
   color: white;
   background-color: rgb(36, 34, 34);
 }
+
+/* HOME PAGE */
+
+/* Main div containing every component on the page */
 .container {
   background-image: url("/roast.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: fit-content;
+  /* Media query to change background image when screen size is 738px or less (mobile) */
   @media(max-width: 738px) {
     background-image: url("/tablebg.jpg");
   }
   
 }
- 
+
+/* All the <a> links on the page */
+.container a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigational bar styles */
 .navbar {
   padding-top: 10px;
   display: flex;
@@ -30,20 +44,37 @@ body {
   gap: 10px;
   justify-content: center;
 }
-.navbar h1 {
+.navbar a {
   font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  
 }
 .navbar img {
   width: 60px;
   height: 60px;
 }
+
+/* Div that contains the search icon  */
 .magnifying-icon-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 45px;
   margin-bottom: 50px;
   cursor: pointer;
 }
+.magnifying-icon-container form input{
+  padding: 10px;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+.magnifying-icon-container button{
+  background-color: #1a1a1a;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .magnifying-icon {
   border: 3px solid white;
   border-radius: 15px;
@@ -55,41 +86,33 @@ body {
   padding-top: 10px;
 }
 
-.alphabet{
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
-}
+/* Div containing the rest of the remaining items on the homepage */
 .wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
 }
-#letter{
-  grid-column: 3;
-}
-.wrapper h1{
-  text-align: center;
-}
-.footer{
-  margin-top: 26px;
-  text-align: center;
-}
+/* Buttons inside wrapper */
 .button{
   background-color:  rgb(36, 34, 34);
   padding: 15px;
   border-radius: 15px;
   cursor: pointer;
   color: white;
-  
 }
-.container a{
-  text-decoration: none;
-  color: white;
+.wrapper h1{
+  text-align: center;
 }
 
+/*Div surrounding our list of circular alphabet buttons which is a grid */
+.alphabet{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+} 
 
+/* Styling for each circular button */
 #alphabet-letter{
   border-radius: 50%;
   width: 36px;
@@ -101,3 +124,62 @@ body {
   background: rgb(36, 34, 34);
   cursor: pointer;
 }
+
+/* Styling the letter u so that letters u-z are centered in the middle of the grid */
+#letter{
+  grid-column: 3;
+}
+
+/* FOOD CATEGORY LIST PAGE */
+#wrapper-food-category{
+  display: flex;
+  justify-content: center;
+}
+
+#food-category-card{
+  background-color: #ffffff;
+  color: #1a1a1a;
+  width: 500px;
+  height: fit-content;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+
+}
+
+#food-category-card p{
+  margin-bottom: 40px;
+}
+
+
+
+/* SEARCH MEAL PAGE (also used in letter-search-page) */
+#search-meal-card{
+  background-color: #ffffff;
+  color: #1a1a1a;
+  width: 500px;
+  height: fit-content;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+min-height: 100vh;
+}
+
+#search-meal-card img{
+height: 250px;
+width: 270px;
+}
+
+#search-meal-card p{
+margin-bottom: 20px;
+}
+
+/* footer */
+.footer{
+  margin-top: 26px;
+  text-align: center;
+}
+
+
+
+
